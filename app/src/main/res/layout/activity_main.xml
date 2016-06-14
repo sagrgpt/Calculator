@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.example.calculator.MainActivity">
+
+
+    <TextView
+        android:text="0"
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="right"
+        android:paddingRight="5dp"
+        android:layout_weight="2"
+        android:background="#d9cccc" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:background="#353232"
+            android:id="@+id/cancelButton"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:onClick="clickCancel"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Del"
+            android:id="@+id/delButton"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:background="#353232"
+            android:layout_gravity="left|right"
+            android:onClick="clickDel"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/button7"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="#353232"
+            android:onClick="click7"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/divideButton"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:background="#353232"
+            android:layout_gravity="left|right"
+            android:onClick="clickDivide"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/button4"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="#353232"
+            android:onClick="click4"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:id="@+id/button8"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="#353232"
+            android:onClick="click8"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/button9"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="#353232"
+            android:onClick="click9"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:id="@+id/mulButton"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:background="#353232"
+            android:layout_gravity="left|right"
+            android:onClick="clickMul"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/button1"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:background="#353232"
+            android:onClick="click1"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/button5"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="#353232"
+            android:onClick="click5"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/button6"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="#353232"
+            android:onClick="click6"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/button2"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:background="#353232"
+            android:onClick="click2"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/button3"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:background="#353232"
+            android:onClick="click3"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/SubButton"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:background="#353232"
+            android:layout_gravity="left|right"
+            android:onClick="clickSub"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:id="@+id/decimalButton"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:background="#353232"
+            android:onClick="clickDecimal"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/button0"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:background="#353232"
+            android:onClick="click0"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:id="@+id/equalButton"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:background="#353232"
+            android:soundEffectsEnabled="true"
+            android:onClick="clickEqual"/>
+
+        <Button
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/addButton"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:background="#353232"
+            android:layout_gravity="left|right"
+            android:onClick="clickAdd"/>
+
+    </GridLayout>
+</LinearLayout>
